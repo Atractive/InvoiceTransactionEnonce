@@ -102,9 +102,9 @@ public class DAO {
 
                     for (int i = 0; i < productIDs.length; i++) {
                         statement2.setInt(1, clef);
-                        statement2.setInt(2, i + 1);
-                        statement2.setInt(3, productIDs[i]);
-                        statement2.setInt(4, quantities[i]);
+                        statement2.setInt(2, i + 1);          
+                        statement2.setInt(3, productIDs[i]);   
+                        statement2.setInt(4, quantities[i]);                        
                         statement2.setInt(5, clef);
                         statement2.executeUpdate();
                     }
